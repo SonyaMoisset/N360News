@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/QueryActivityConstraintLayout"
+    tools:context=".ui.features.query.QueryActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/activity_query_cardview"
+        style="@style/QueryActivityCardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:id="@+id/activity_query_progress_bar"
+            style="@style/ProgressBar"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/activity_query_input"
+            style="@style/QueryActivityEditText"
+            android:hint="@string/query_activity_hint_message"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_query_recycler_view"
+        style="@style/QueryActivityRecyclerView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_query_cardview"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.sources.SourcesActivity">
+
+    <ProgressBar
+        android:id="@+id/activity_sources_progress_bar"
+        style="@style/SourcesActivityProgressBar"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_sources_recyclerview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/activity_sources_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/activity_sources_linear_layout"
+            style="@style/SourcesActivityLinearLayout">
+
+            <TextView
+                android:id="@+id/activity_sources_spinner_text"
+                style="@style/SourcesActivityTextView"
+                android:text="@string/sources_activity_spinner_text"/>
+
+            <Spinner
+                android:id="@+id/activity_sources_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/activity_sources_recyclerview"
+        style="@style/SourcesActivityRecyclerView"
+        app:layout_constraintBottom_toTopOf="@+id/activity_sources_cardview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

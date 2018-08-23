@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">N360</string>
+
+    <!--Widget-->
+    <string name="pref_title_key">pref_title_key</string>
+    <string name="pref_widget_key">pref_widget_key</string>
+    <string name="widget_text">Choose a recipe and click the add to the widget button to save it to the HomeScreen</string>
+
+    <!--Base Activity-->
+    <string name="base_activity_network_connection_message">Check your network connection!</string>
+
+    <!--Main Activity-->
+    <string name="main_activity_sources_title">Sources</string>
+    <string name="main_activity_sources_description">Get breaking news headlines and articles from over 30,000 news sources</string>
+    <string name="main_activity_favorites_title">Favorite</string>
+    <string name="main_activity_favorites_description">Save your favorite articles and read them at any time</string>
+    <string name="main_activity_queries_title">Search</string>
+    <string name="main_activity_queries_description">Looking for a particular information or simply searching by keywords</string>
+
+    <!--Sources Activity-->
+    <string name="sources_activity_action_bar_title">Sources</string>
+    <string name="sources_activity_extra_source_id">source_id</string>
+    <string name="sources_activity_extra_source_name">source_name</string>
+    <string name="sources_activity_spinner_text">Filter by</string>
+
+    <!--Article List Item-->
+    <string name="article_list_item_thumbnail_image">Article Thumbnail</string>
+
+    <!--Articles List Item-->
+    <string name="articles_list_item_thumbnail_image">Article Thumbnail</string>
+    <string name="articles_activity_favorite_article_message">Article has been saved!</string>
+
+    <!--Favorite Activity-->
+    <string name="favorite_activity_delete_article_message">Article has been deleted!</string>
+
+    <!--Query Activity-->
+    <string name="query_activity_input_text_toast_message">Your query is too short, please try again!</string>
+    <string name="query_activity_hint_message">Enter query</string>
+
+    <!--Menu-->
+    <string name="menu_clear_favorite">clear</string>
+</resources>
